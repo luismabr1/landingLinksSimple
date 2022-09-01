@@ -3,7 +3,7 @@ import {useRouter} from 'next/router';
 import SelectCompany from '../components/SelectCompany'
 import Loading from '../components/Loading';
 
-const company = () => {
+const Company = () => {
     const router = useRouter()
     const name = router.query.nid 
     console.log(`El name de la compañia es ${name}`)
@@ -20,4 +20,4 @@ const company = () => {
             </div>
     )
 }
-export default company
+export default Company
