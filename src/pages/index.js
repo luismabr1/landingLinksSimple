@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {useLinks} from '../context/LinkContext'
 import {useTheme} from 'next-themes'
+import Link from 'next/link'
 import Navbar from '../components/Navbar'
 
 export default function Home() {
@@ -28,15 +29,15 @@ export default function Home() {
         </p>
 
         <div className='max-w-fit flex-col-2 flex items-center content-center flex-wrap '>
-          <a href="/salumeria-chacao" className='m-4 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
+          <Link href="/salumeriaChacao" className='m-4 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
             <h2 className='mb-4 text-2xl text-dark dark:text-white'>Salumeria &rarr;</h2>
-          </a>
+          </Link>
 
-          <a href="/modo" className='m-4 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
+          <Link href="/modo" className='m-4 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
             <h2 className='mb-4 text-2xl text-dark dark:text-white'>MoDo &rarr;</h2>
 
 {/*             {console.log(`link de index ${link}`)} */}
-          </a>
+          </Link>
 
 {/*           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
@@ -59,7 +60,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
+        <Link
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -68,7 +69,7 @@ export default function Home() {
           <span className='invert-0 h-8 ml-2 dark:invert'>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </Link>
       </footer>
     </div>
   )

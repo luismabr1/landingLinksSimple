@@ -1,10 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
-import Link from 'next/link'
 import {useRouter} from 'next/router';
-import {useLinks} from '../context/LinkContext'
 import SelectCompany from '../components/SelectCompany'
-import Modo from '../components/Modo';
 import Loading from '../components/Loading';
 
 const company = () => {
