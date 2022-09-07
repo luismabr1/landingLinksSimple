@@ -12,8 +12,8 @@ export const links = {
       },
       conceptStore:{
         id: 2,
-        name: 'conceptStore',
-        route: '/interno/concept-store',
+        name: 'Concept Store',
+        route: 'conceptStore',
         url: {
           interno: 'http://xeconcept:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9093/posadmin/login.xhtml',
@@ -21,8 +21,8 @@ export const links = {
       },
       modoExpress:{
         id: 3,
-        name: 'Modo Express',
-        route: '/interno/modo-express',
+        name: 'MoDo Express',
+        route: 'modoExpress',
         url: {
           interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
           externo: 'http://comercializadoracds.ddns.net:9091/posadmin/login.xhtml'

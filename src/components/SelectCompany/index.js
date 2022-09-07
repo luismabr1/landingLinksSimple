@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Modo from "../Modo";
+import ModoConceptStore from "../ModoConceptStore";
+import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
 import SalumeriaHatillo from "../SalumeriaHatillo";
 
@@ -35,6 +37,10 @@ const FormRender = ( {company} ) => {
         return <Salumeria />;
       case "salumeriaHatillo":
         return <SalumeriaHatillo />;
+        case "modoExpress":
+            return <ModoExpress />;
+        case "conceptStore":
+            return <ModoConceptStore />;
         default:
             return null; 
 

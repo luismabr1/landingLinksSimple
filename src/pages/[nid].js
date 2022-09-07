@@ -17,7 +17,7 @@ const Company = () => {
                             <Loading />
                         }
                 </div>
-            </div>
+            </div>           
     )
 }
 export default Company

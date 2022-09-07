@@ -12,7 +12,7 @@ const Navbar = () => {
         <>
             <nav className="hidden lg:flex w-full h-14 bg-white justify-between p-4 dark:bg-gray-800 motion-safe:animate-fadeIn">
             <div className="w-auto h-auto">
-				<p className="font-black text-principal text-lg  dark:text-white">Platzi Travel</p>
+				<p className="font-black text-principal text-lg  dark:text-white">Modo Link</p>
 			</div>
 			<div className=" flex flex-row space-x-10">
 				<Link href="/" className="font-bold text-principal dark:text-white">Inicio</Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
 				<button  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
 					<ToggleModeIcon />
 				</button>
-				<UserIcon />
+{/* 				<UserIcon /> */}
 			</div>
 		</nav>
         </>
