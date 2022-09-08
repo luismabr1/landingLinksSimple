@@ -5,9 +5,13 @@ import React from 'react';
 const Layout = ({children}) => {
     return (
         <>
-                <Navbar />
-                {children}
-                <Footer /> 
+<div className='w-full'>
+            <Navbar /> 
+          
+                {children} 
+            <Footer />  
+
+</div>
         </>
     );
 };
