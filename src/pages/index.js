@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
         <h1 className='grid gap-10 text-modo-negro no-underline mt-20 leading-5 m-0 pb-5 text-6xl text-center dark:text-white'>
-          Bienvenido a <a className= 'hover:text-neutral-200 dark:hover:text-neutral-200 text-rose-500 active:bg-violet-700 ' href="https://modoccs.com">MoDo </a> Link!
+          Bienvenido a <a className= 'hover:text-neutral-200 dark:hover:text-neutral-200 text-rose-500 active:bg-violet-700 ' href="https://modoccs.com" target="_blank" >MoDo </a> Link!
         </h1>
       <main className='min-h-screen, p-16 flex-1 flex flex-col justify-center items-center'>
 
