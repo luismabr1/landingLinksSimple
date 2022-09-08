@@ -25,7 +25,7 @@ export const links = {
         route: 'modoExpress',
         url: {
           interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
-          externo: 'http://comercializadoracds.ddns.net:9091/posadmin/login.xhtml'
+          externo: 'http://comercializadoracds.ddns.net:9090/posadmin/login.xhtml'
         }
       },
       salumeriaC:{
