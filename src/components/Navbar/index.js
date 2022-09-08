@@ -27,7 +27,7 @@ const Navbar = ({ fixed }) => {
 					<ToggleModeIcon />
 				</span>
 			</div>
-			<span onClick={() => setNavbarOpen(!navbarOpen)}>
+			<span className='invert dark:invert-0' onClick={() => setNavbarOpen(!navbarOpen)}>
               <BarsIcon />
 			</span>
             </button>
