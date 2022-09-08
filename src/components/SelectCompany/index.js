@@ -5,9 +5,8 @@ import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
 import SalumeriaHatillo from "../SalumeriaHatillo";
 
-const SelectForm = (props) =>{
+const SelectCompany = (props) =>{
   const [compania, setCompania] = useState(props.company)
-
 
   const Forms = [{
     id: '1',
@@ -69,4 +68,4 @@ const FormRender = ( {company} ) => {
 }
   
 
-export default SelectForm;
+export default SelectCompany;

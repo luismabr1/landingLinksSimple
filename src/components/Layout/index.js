@@ -7,10 +7,8 @@ const Layout = ({children}) => {
         <>
 <div className='w-full'>
             <Navbar /> 
-          
                 {children} 
             <Footer />  
-
 </div>
         </>
     );
