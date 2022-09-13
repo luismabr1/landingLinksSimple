@@ -5,15 +5,11 @@ import Loading from '../components/Loading';
 
 const Company = () => {
     const router = useRouter()
-    console.log(`nid: ${router.query.nid}`)
     const company = router.query.nid
-    console.log(`company: ${company}`)
     const {name, setName} = useState(company)
-    console.log(`name: ${name}`)
     const {loading, setLoading} = useState(true)
 
     useEffect(() => {
-        console.log(`effect: ${company}`)
         if (company) {
             router.push(`/${company}`)
         }

@@ -28,7 +28,6 @@ const SelectCompany = (props) =>{
 
 ];
 const FormRender = ( {company} ) => {
-    console.log(company)
      switch (company) {
       case "modo":
         return <Modo />;
