@@ -3,48 +3,73 @@ import React, { useContext, useState } from 'react'
 export const links = {
     modo:{
         id: 1,
-        name: 'MoDo',
         route: 'modo',
-        url: {
+        urlBackOffice: {
+          name: 'MoDo BackOffice',
           interno: 'http://xetuxpro:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9091/posadmin/login.xhtml',
-        }
+        },
+        urlBackEnd: {
+          name: 'MoDo BackEnd',
+          interno: 'http://xetuxpro:9090/login.xhtml',
+          externo: 'http://comercializadoracds.ddns.net:9090//xc-one-pos/Logout/login/index.xhtml',
       },
+    },
       conceptStore:{
         id: 2,
-        name: 'Concept Store',
         route: 'conceptStore',
-        url: {
+        urlBackOffice: {
+          name: 'Concept Store BackOffice',
           interno: 'http://xeconcept:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9093/posadmin/login.xhtml',
-        }
+        },
+        urlBackEnd: {
+          name: 'Concept Store BackEnd',
+          interno: 'http://xeconcept:9090/login.xhtml',
+          externo: 'http://modoccs.ddns.net:9093/xc-one-pos/Logout/login/index.xhtml',
+      },
       },
       modoExpress:{
         id: 3,
-        name: 'MoDo Express',
         route: 'modoExpress',
-        url: {
+        urlBackOffice: {
+          name: 'MoDo Delivery BackOffice',
           interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
-          externo: 'http://comercializadoracds.ddns.net:9090/posadmin/login.xhtml'
-        }
+          externo: 'http://comercializadoracds.ddns.net:9090/posadmin/login.xhtml',
+        },
+        urlBackEnd: {
+          name: 'MoDo Delivery BackEnd',
+          interno: 'http://xetuxcds:9090/login.xhtml',
+          externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
+      },
       },
       salumeriaC:{
         id: 4,
-        name: 'Salumeria Chacao',
         route: 'salumeriaChacao',
-        url: {
+        urlBackOffice: {
+          name: 'Salumeria Chacao BackOffice',
           interno: 'http://xesacentral:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9094/posadmin/login.xhtml',
-        }
+        },
+        urlBackEnd: {
+          name: 'Salumeria Chacao BackEnd',
+          interno: 'http://xesacentral:9090/login.xhtml',
+          externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
+      },
       },
       salumeriaH:{
         id: 4,
-        name: 'Salumeria Hatillo',
         route: 'salumeriaHatillo',
-        url: {
-          interno: 'http://xesacentral:9090/posadmin/login.xhtml',
-          externo: 'http://modoccs.ddns.net:9094/posadmin/login.xhtml',
-        }
+        urlBackOffice: {
+          name: 'Salumeria Hatillo BackOffice',
+          interno: 'http://xesaha:9090/posadmin/login.xhtml',
+          externo: 'http://salumeriahatillo.ddns.net:9090/posadmin/login.xhtml',
+        },
+        urlBackEnd: {
+          name: 'Salumeria Hatillo BackEnd',
+          interno: 'http://xesaha:9090/login.xhtml',
+          externo: 'http://salumeriahatillo.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+      },
       },
 }
 
@@ -52,7 +77,7 @@ export const links = {
 
 export const LinkContext = React.createContext({
   links: undefined,
-  setLinks: async (links) => null,
+  setLinks: async (links) => null
 })
 
 export const useLinks = () => useContext(LinkContext)
