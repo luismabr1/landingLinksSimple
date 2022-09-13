@@ -12,7 +12,7 @@ export const links = {
         urlBackEnd: {
           name: 'MoDo BackEnd',
           interno: 'http://xetuxpro:9090/login.xhtml',
-          externo: 'http://comercializadoracds.ddns.net:9090//xc-one-pos/Logout/login/index.xhtml',
+          externo: 'http://comercializadoracds.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
     },
       conceptStore:{
@@ -71,7 +71,22 @@ export const links = {
           externo: 'http://salumeriahatillo.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
-}
+    calidad:{
+      id: 5,
+      route: 'calidad',
+      urlBackOffice: {
+        name: 'Calidad BackOffice',
+        interno: 'http://xetuxmodoqa:9090/posadmin/login.xhtml',
+        externo: 'http://modoccs.ddns.net:9092/posadmin/login.xhtml',
+      },
+      urlBackEnd: {
+        name: 'Calidad BackEnd',
+        interno: 'http://xetuxpro:9090/login.xhtml',
+        externo: 'http://comercializadoracds.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+      },
+    }
+  }
+
 
   
 

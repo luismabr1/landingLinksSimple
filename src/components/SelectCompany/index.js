@@ -4,6 +4,7 @@ import ModoConceptStore from "../ModoConceptStore";
 import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
 import SalumeriaHatillo from "../SalumeriaHatillo";
+import Calidad from "../Calidad";
 
 const SelectCompany = (props) =>{
   const [compania, setCompania] = useState(props.company)
@@ -30,7 +31,6 @@ const FormRender = ( {company} ) => {
     console.log(company)
      switch (company) {
       case "modo":
-        console.log(company)
         return <Modo />;
       case "salumeriaChacao":
         return <Salumeria />;
@@ -40,6 +40,8 @@ const FormRender = ( {company} ) => {
             return <ModoExpress />;
         case "conceptStore":
             return <ModoConceptStore />;
+        case "calidad":
+          return <Calidad />;
         default:
             return null; 
 
