@@ -11,8 +11,8 @@ export const links = {
         },
         urlBackEnd: {
           name: 'MoDo BackEnd',
-          interno: 'http://xetuxpro:9090/login.xhtml',
-          externo: 'http://comercializadoracds.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+          interno: 'http://xetuxpro.modo.local:9090/xc-one-pos/Logout/login/index.xhtml',
+          externo: 'http://modoccs.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
     },
       conceptStore:{
@@ -25,7 +25,7 @@ export const links = {
         },
         urlBackEnd: {
           name: 'Concept Store BackEnd',
-          interno: 'http://xeconcept:9090/login.xhtml',
+          interno: 'http://xeconcept:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9093/xc-one-pos/Logout/login/index.xhtml',
       },
       },
@@ -39,7 +39,7 @@ export const links = {
         },
         urlBackEnd: {
           name: 'MoDo Delivery BackEnd',
-          interno: 'http://xetuxcds:9090/login.xhtml',
+          interno: 'http://xetuxcds:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
       },
       },
@@ -53,7 +53,7 @@ export const links = {
         },
         urlBackEnd: {
           name: 'Salumeria Chacao BackEnd',
-          interno: 'http://xesacentral:9090/login.xhtml',
+          interno: 'http://xesacentral:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
       },
       },
@@ -67,7 +67,7 @@ export const links = {
         },
         urlBackEnd: {
           name: 'Salumeria Hatillo BackEnd',
-          interno: 'http://xesaha:9090/login.xhtml',
+          interno: 'http://xesaha:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://salumeriahatillo.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
@@ -81,8 +81,8 @@ export const links = {
       },
       urlBackEnd: {
         name: 'Calidad BackEnd',
-        interno: 'http://xetuxpro:9090/login.xhtml',
-        externo: 'http://comercializadoracds.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+        interno: 'http://xetuxmodoqa:9090/xc-one-pos/Logout/login/index.xhtml',
+        externo: 'http://modoccs.ddns.net:9092/xc-one-pos/Logout/login/index.xhtml',
       },
     }
   }

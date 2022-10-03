@@ -16,7 +16,7 @@ const Company = () => {
     }, [company])
 
     return (
-            <div className='min-h-screen, p-16 flex-1 flex flex-col justify-center items-center'>
+            <div className='h-fit p-16 flex flex-col flex-auto justify-center items-center'>
                             <p className='text-black dark:text-white text-2xl'>
                                     Elija la opcion mas conveniente{' '}
                             </p>

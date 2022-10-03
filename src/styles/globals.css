@@ -100,5 +100,9 @@ a {
   animation-timing-function: ease-in;
  }
 }
+svg {
+ width: inherit;
+ height: inherit;
+}
 
 

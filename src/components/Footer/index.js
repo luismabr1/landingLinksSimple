@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
+import LogoModo from '../LogoModo'
 
 
 const Footer = () => {
@@ -17,7 +18,7 @@ const Footer = () => {
 
                     Powered by{' '}
                     <span className='invert-0 h-8 ml-2 dark:invert'>
-                    <Image src="/logomodo.png" alt="Modo Logo" width={94} height={30} />
+                    <LogoModo />
                     </span>
                 </div>
                 </Link>

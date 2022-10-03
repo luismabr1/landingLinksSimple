@@ -13,8 +13,9 @@
 }
 
 .footer {
-  display: flex;
-  flex: 1;
+  display: grid;
+  height:auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -22,7 +23,7 @@
 }
 
 .footer a {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
@@ -66,11 +67,9 @@
 }
 
 .grid {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
