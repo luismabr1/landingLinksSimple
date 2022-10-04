@@ -12,7 +12,7 @@ export const links = {
         urlBackEnd: {
           name: 'MoDo BackEnd',
           interno: 'http://xetuxpro.modo.local:9090/xc-one-pos/Logout/login/index.xhtml',
-          externo: 'http://modoccs.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+          externo: 'http://modoccs.ddns.net:9091/xc-one-pos/Logout/login/index.xhtml',
       },
     },
       conceptStore:{
