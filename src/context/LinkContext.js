@@ -40,7 +40,7 @@ export const links = {
         urlBackEnd: {
           name: 'MoDo Delivery BackEnd',
           interno: 'http://xetuxcds:9090/xc-one-pos/Logout/login/index.xhtml',
-          externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
+          externo: 'http://comercializadoracds.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
       salumeriaC:{
