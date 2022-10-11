@@ -88,7 +88,7 @@ const Navbar = ({ fixed }) => {
 					</a>
 				</Link>
               </li>
-			  <li className="nav-item">
+{/* 			  <li className="nav-item">
 				<Link href="/calidad">
 					<a
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
@@ -96,7 +96,7 @@ const Navbar = ({ fixed }) => {
 					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Modo Calidad</span>
 					</a>
 				</Link>
-              </li>
+              </li> */}
 			  <div className={"space-x-4" + (navbarOpen ? " hidden" : " flex")}>
 				<button  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
 					<ToggleModeIcon />

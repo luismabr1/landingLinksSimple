@@ -18,7 +18,7 @@ const Company = () => {
     return (
             <div className='h-fit p-16 flex flex-col flex-auto justify-center items-center'>
                             <p className='text-black dark:text-white text-2xl'>
-                                    Elija la opcion mas conveniente{' '}
+                                    Elija la opción más conveniente{' '}
                             </p>
 
                                     {company ? <SelectCompany company={company} /> : <Loading />}
