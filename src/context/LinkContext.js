@@ -35,12 +35,12 @@ export const links = {
         urlBackOffice: {
           name: 'MoDo Delivery BackOffice',
           interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
-          externo: 'http://comercializadoracds.ddns.net:9090/posadmin/login.xhtml',
+          externo: 'http://modoccs.ddns.net:9090/posadmin/login.xhtml',
         },
         urlBackEnd: {
           name: 'MoDo Delivery BackEnd',
           interno: 'http://xetuxcds:9090/xc-one-pos/Logout/login/index.xhtml',
-          externo: 'http://comercializadoracds.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+          externo: 'http://modoccs.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
       salumeriaC:{
