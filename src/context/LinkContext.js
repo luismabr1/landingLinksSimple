@@ -84,8 +84,22 @@ export const links = {
         interno: 'http://xetuxmodoqa:9090/xc-one-pos/Logout/login/index.xhtml',
         externo: 'http://modoccs.ddns.net:9092/xc-one-pos/Logout/login/index.xhtml',
       },
+    },
+    modoCandelaria:{
+      id: 6,
+      route: 'Sambil Candelaria',
+      urlBackOffice: {
+        name: 'BackOffice Sambil Candelaria',
+        interno: 'http://xetuxbar:9090/posadmin/login.xhtml',
+        externo: 'http://modoletonia.ddns.net:9095/posadmin/login.xhtml',
+      },
+      urlBackEnd: {
+        name: 'Calidad BackEnd',
+        interno: 'http://xetuxbar:9090/xc-one-pos/Logout/login/index.xhtml',
+        externo: 'http://modoletonia.ddns.net:9095/xc-one-pos/Logout/login/index.xhtml',
+      },
     }
-  }
+  },
 
 
   
