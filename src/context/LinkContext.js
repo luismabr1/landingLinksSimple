@@ -87,7 +87,7 @@ export const links = {
     },
     modoCandelaria:{
       id: 6,
-      route: 'Sambil Candelaria',
+      route: 'modoCandelaria',
       urlBackOffice: {
         name: 'BackOffice Sambil Candelaria',
         interno: 'http://xetuxbar:9090/posadmin/login.xhtml',
