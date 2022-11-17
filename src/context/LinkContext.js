@@ -99,7 +99,7 @@ export const links = {
         externo: 'http://modoletonia.ddns.net:9095/xc-one-pos/Logout/login/index.xhtml',
       },
     }
-  },
+  }
 
 
   
