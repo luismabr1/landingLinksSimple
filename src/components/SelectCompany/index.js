@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Modo from "../Modo";
+import ModoGlpi from "../ModoGlpi";
 import ModoConceptStore from "../ModoConceptStore";
 import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
@@ -28,6 +29,9 @@ const SelectCompany = (props) =>{
 }, {
   id:'6',
   name:'modoCandelaria'
+},{
+  id:'7',
+  name:'modoGlpi'
 }
 
 ];
@@ -47,6 +51,8 @@ const FormRender = ( {company} ) => {
           return <Calidad />;
         case "modoCandelaria":
           return <ModoCandelaria />;
+        case "modoGlpi":
+          return <ModoGlpi />;
         default:
             return null; 
 

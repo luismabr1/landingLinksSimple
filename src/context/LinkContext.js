@@ -98,8 +98,17 @@ export const links = {
         interno: 'http://xetuxbar:9090/xc-one-pos/Logout/login/index.xhtml',
         externo: 'http://modoletonia.ddns.net:9095/xc-one-pos/Logout/login/index.xhtml',
       },
-    }
+    },
+    modoGlpi:{
+      id: 6,
+      route: 'modoGlpi',
+      url: {
+        name: 'Glpi Letonia',
+        interno: 'http://glpi.modo.local/glpi/',
+        externo: 'http://modoletonia.ddns.net:8095/nagios/',
+      },
   }
+}
 
 
   
