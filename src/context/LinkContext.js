@@ -105,7 +105,7 @@ export const links = {
       url: {
         name: 'Glpi Letonia',
         interno: 'http://glpi.modo.local/glpi/',
-        externo: 'http://modoletonia.ddns.net:8095/nagios/',
+        externo: 'http://modoletonia.ddns.net:8095/glpi/',
       },
   }
 }
