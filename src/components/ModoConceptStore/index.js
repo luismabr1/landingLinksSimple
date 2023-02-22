@@ -14,11 +14,17 @@ const ModoConceptStore = () => {
                         <Link href={link.conceptStore.urlBackOffice.externo} passHref>
                             <a className="bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9" target="_blank" rel="noreferrer">{link.conceptStore.urlBackOffice.name} Externo</a>
                         </Link>
+                        <Link href={link.conceptStore.urlBackOffice.alternoExterno} passHref>
+                            <a className="bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9" target="_blank" rel="noreferrer">{link.conceptStore.urlBackOffice.name} Alternativo Externo</a>
+                        </Link>
                         <Link href={link.conceptStore.urlBackEnd.interno}passHref>
                             <a className='bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9' target="_blank" rel="noreferrer">{link.conceptStore.urlBackEnd.name} Interno</a>
                         </Link>
                         <Link href={link.conceptStore.urlBackEnd.externo} passHref>
                             <a className='bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9' target="_blank" rel="noreferrer">{link.conceptStore.urlBackEnd.name} Externo</a>
+                        </Link>
+                        <Link href={link.conceptStore.urlBackEnd.alternoExterno} passHref>
+                            <a className='bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9' target="_blank" rel="noreferrer">{link.conceptStore.urlBackEnd.name} Alternativo Externo</a>
                         </Link>
                     </div>
     );

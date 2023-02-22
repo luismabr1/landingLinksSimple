@@ -42,7 +42,7 @@ export default function Home() {
           </Link>
 
           <Link href="/modoExpress" className='m-3 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9">MoDo Delivery</button>
+          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9">Produccion y Acopio Piquin</button>
           </Link>
           <Link href="/modoCandelaria" className='m-3 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
           <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9">MoDo Candelaria</button>

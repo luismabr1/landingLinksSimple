@@ -84,7 +84,7 @@ const Navbar = ({ fixed }) => {
 					<a
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
 					>
-					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Modo Delivery</span>
+					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Produccion y Acopio Piquin</span>
 					</a>
 				</Link>
               </li>

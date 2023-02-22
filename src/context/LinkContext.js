@@ -8,11 +8,13 @@ export const links = {
           name: 'MoDo BackOffice',
           interno: 'http://xetuxpro:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9091/posadmin/login.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9091/posadmin/login.xhtml',
         },
         urlBackEnd: {
           name: 'MoDo BackEnd',
           interno: 'http://xetuxpro.modo.local:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9091/xc-one-pos/Logout/login/index.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9091/xc-one-pos/Logout/login/index.xhtml'
       },
     },
       conceptStore:{
@@ -22,25 +24,32 @@ export const links = {
           name: 'Concept Store BackOffice',
           interno: 'http://xeconcept:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9093/posadmin/login.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9093/posadmin/login.xhtml',
         },
         urlBackEnd: {
           name: 'Concept Store BackEnd',
           interno: 'http://xeconcept:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9093/xc-one-pos/Logout/login/index.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9093/xc-one-pos/Logout/login/index.xhtml',
+          
       },
       },
-      modoExpress:{
+      produccionPiquin:{
         id: 3,
-        route: 'modoExpress',
+        route: 'produccionPiquin',
         urlBackOffice: {
-          name: 'MoDo Delivery BackOffice',
+          name: 'Produccion y Acopio BackOffice',
           interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9090/posadmin/login.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9090/posadmin/login.xhtml',
+
         },
         urlBackEnd: {
-          name: 'MoDo Delivery BackEnd',
+          name: 'Produccion y Acopio BackEnd',
           interno: 'http://xetuxcds:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9090/xc-one-pos/Logout/login/index.xhtml',
+
       },
       },
       salumeriaC:{
@@ -50,11 +59,13 @@ export const links = {
           name: 'Salumeria Chacao BackOffice',
           interno: 'http://xesacentral:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9094/posadmin/login.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9094/posadmin/login.xhtml',
         },
         urlBackEnd: {
           name: 'Salumeria Chacao BackEnd',
           interno: 'http://xesacentral:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
+          alternoExterno:'http://modoccs.sytes.net:9094/xc-one-pos/Logout/login/index.xhtml',
       },
       },
       salumeriaH:{
