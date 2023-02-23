@@ -7,6 +7,8 @@ import Salumeria from "../Salumeria";
 import SalumeriaHatillo from "../SalumeriaHatillo";
 import Calidad from "../Calidad";
 import ModoCandelaria from "../ModoCandelaria";
+import ModoSanLuis from "../ModoSanLuis";
+
 
 const SelectCompany = (props) =>{
   const [compania, setCompania] = useState(props.company)
@@ -32,6 +34,9 @@ const SelectCompany = (props) =>{
 },{
   id:'7',
   name:'modoGlpi'
+},{
+  id:'7',
+  name:'modoSanLuis'
 }
 
 ];
@@ -53,6 +58,8 @@ const FormRender = ( {company} ) => {
           return <ModoCandelaria />;
         case "modoGlpi":
           return <ModoGlpi />;
+          case "modoSanLuis":
+            return <ModoSanLuis />;
         default:
             return null; 
 

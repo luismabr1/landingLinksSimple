@@ -50,6 +50,9 @@ export default function Home() {
           <Link href="/modoGlpi" className='m-3 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
           <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9">MoDo GLPI</button>
           </Link>
+          <Link href="/modoSanLuis" className='m-3 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
+          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9">MoDo San Luis</button>
+          </Link>
 {/*           <Link href="/calidad" className='m-3 p-4 text-left text-inherit no-underline border-solid border border-gray-800 rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
           <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9">MoDo Calidad</button>
           </Link> */}

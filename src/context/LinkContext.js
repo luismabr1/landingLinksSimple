@@ -118,7 +118,15 @@ export const links = {
         interno: 'http://glpi.modo.local/glpi/',
         externo: 'http://modoletonia.ddns.net:8095/glpi/',
       },
-  }
+  },
+    modoSanLuis:{
+    id: 7,
+    route: 'modoSanLuis',
+    url: {
+      name: 'Modo San Luis',
+      externo: 'http://piquinsanluis.ddns.net:9090/posadmin/login.xhtml',
+    },
+}
 }
 
 
