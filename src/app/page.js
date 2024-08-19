@@ -22,29 +22,29 @@ export default function Home() {
 
         </p>
 
-        <div className=' md:grid md:grid-cols grid-cols-5 items-center content-center flex-wrap '>
+        <div className=' md:grid md:grid-cols grid-cols-4 items-center content-center flex-wrap '>
 
-        <Link href='/modo' className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100'>
-           <button className="bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">MoDo</button>
+        <Link href='/modo' className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded'>
+           <button>MoDo</button>
         </Link>
 
-        <Link href="/conceptStore" className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">Concept Store</button>
+        <Link href="/conceptStore" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+              <button >Concept Store</button>
           </Link>
-          <Link href="/salumeriaChacao" className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">Salumeria Chacao</button>
+          <Link href="/salumeriaChacao" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <button >Salumeria Chacao</button>
           </Link>
-          <Link href="/modoExpress" className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">Produccion y Acopio Piquin</button>
+          <Link href="/modoExpress" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <button >Produccion y Acopio Piquin</button>
           </Link>
-          <Link href="/modoCandelaria" className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">MoDo Candelaria</button>
+          <Link href="/modoCandelaria" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <button>MoDo Candelaria</button>
           </Link>
-          <Link href="/modoGlpi" className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">MoDo GLPI</button>
+          <Link href="/modoGlpi" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <button >MoDo GLPI</button>
           </Link>
-          <Link href="/modoSanLuis" className='m-3 p-4 text-left text-inherit no-underline rounded-lg transition-colors delay-50 hover:text-indigo-600  hover:border-indigo-600 duration-100 max-w-xs'>
-          <button className="bg-transparent hover:bg-black text-black dark:hover:bg-white dark:hover:text-black dark:text-white font-semibold hover:text-white py-2 px-10 border border-black hover:border-transparent rounded m-5 p-9">MoDo San Luis</button>
+          <Link href="/modoSanLuis" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+            <button >MoDo San Luis</button>
           </Link>
 
 

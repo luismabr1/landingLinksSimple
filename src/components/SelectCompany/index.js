@@ -1,17 +1,15 @@
 import { useState, useEffect } from "react";
-/* 
-import ModoGlpi from "../ModoGlpi";
 import ModoConceptStore from "../ModoConceptStore";
+import ModoGlpi from "../ModoGlpi";
 import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
 import ModoCandelaria from "../ModoCandelaria";
-import ModoSanLuis from "../ModoSanLuis"; */
+import ModoSanLuis from "../ModoSanLuis"; 
 import Modo from "../Modo";
 
 
 const SelectCompany = (props) =>{
   const [compania, setCompania] = useState(props.company)
-  console.log('Company click 2', compania)
 
   const Forms = [{
     id: '1',
@@ -42,20 +40,20 @@ const SelectCompany = (props) =>{
 ];
 const FormRender = ( {company} ) => {
      switch (company) {
-      case "/modo":
+      case "modo":
         return <Modo />;
-/*      case "/salumeriaChacao":
+      case "conceptStore":
+        return <ModoConceptStore />;
+      case "salumeriaChacao":
         return <Salumeria />;
-         case "/modoExpress":
-            return <ModoExpress />;
-        case "/conceptStore":
-            return <ModoConceptStore />;
-        case "/modoCandelaria":
-          return <ModoCandelaria />;
-        case "/modoGlpi":
-          return <ModoGlpi />;
-          case "/modoSanLuis":
-            return <ModoSanLuis />; */
+      case "modoExpress":
+        return <ModoExpress />;
+      case "modoCandelaria":
+        return <ModoCandelaria />;
+      case "modoGlpi":
+        return <ModoGlpi />;
+      case "modoSanLuis":
+        return <ModoSanLuis />;
         default:
             return null; 
 

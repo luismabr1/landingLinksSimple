@@ -1,9 +1,6 @@
-import React, { useContext, createContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 
-const AppContext = React.createContext();
-
-export function AppWrapper({ children }) {
-  const links = {
+const links = {
     modo:{
         id: 1,
         route: 'modo',
@@ -45,14 +42,14 @@ export function AppWrapper({ children }) {
           interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
           externo: 'http://modoccs.ddns.net:9090/posadmin/login.xhtml',
           alternoExterno:'http://modoccs.sytes.net:9090/posadmin/login.xhtml',
-  
+
         },
         urlBackEnd: {
           name: 'Produccion y Acopio BackEnd',
           interno: 'http://xetuxcds:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
           alternoExterno:'http://modoccs.sytes.net:9090/xc-one-pos/Logout/login/index.xhtml',
-  
+
       },
       },
       salumeriaC:{
@@ -69,6 +66,20 @@ export function AppWrapper({ children }) {
           interno: 'http://xesacentral:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
           alternoExterno:'http://modoccs.sytes.net:9094/xc-one-pos/Logout/login/index.xhtml',
+      },
+      },
+      salumeriaH:{
+        id: 4,
+        route: 'salumeriaHatillo',
+        urlBackOffice: {
+          name: 'Salumeria Hatillo BackOffice',
+          interno: 'http://xesaha:9090/posadmin/login.xhtml',
+          externo: 'http://salumeriahatillo.ddns.net:9090/posadmin/login.xhtml',
+        },
+        urlBackEnd: {
+          name: 'Salumeria Hatillo BackEnd',
+          interno: 'http://xesaha:9090/xc-one-pos/Logout/login/index.xhtml',
+          externo: 'http://salumeriahatillo.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
     calidad:{
@@ -103,7 +114,7 @@ export function AppWrapper({ children }) {
       id: 6,
       route: 'modoGlpi',
       url: {
-        name: 'Glpi Letonia',
+        name: 'Glpi',
         interno: 'http://glpi.modo.local/glpi/',
         externo: 'http://modoletonia.ddns.net:8095/glpi/',
       },
@@ -115,28 +126,52 @@ export function AppWrapper({ children }) {
       name: 'Modo San Luis',
       externo: 'http://piquinsanluis.ddns.net:9090/posadmin/login.xhtml',
     },
-  }
-  }
-    return (
-      <AppContext.Provider value={links}>
-        {children}
-      </AppContext.Provider>
-    );
 }
-
-export function useAppContext() {
-return useContext(AppContext);
 }
+// Crea el contexto
+export const LinkContext = React.createContext({
+  links: links,
+  setLinks: async (links) => null,
+});
 
-/* export const LinkContext = React.createContext({
-  links: undefined,
-  setLinks: async (links) => null
-})
+// Hook personalizado para usar el contexto
+export const useLinks = () => useContext(LinkContext);
 
-export const useLinks = () => useContext(LinkContext)
-
+// Proveedor del contexto
 export const LinkProvider = ({ children }) => {
-  const [link, setLink] = useState(links)
+  const [link, setLink] = useState(links);
 
-  return <LinkContext.Provider value={{ link, setLink }}>{children}</LinkContext.Provider>
-} */
+
+  return (
+    <LinkContext.Provider value={{ link, setLink }}>
+      {children}
+    </LinkContext.Provider>
+  );
+};
+
+  
+/* // Crea el contexto
+export const LinkContext = React.createContext({
+  links: undefined,
+  setLinks: async (links) => null,
+});
+
+// Hook personalizado para usar el contexto
+export const useLinks = () => useContext(LinkContext);
+
+// Proveedor del contexto
+export const LinkProvider = ({ children }) => {
+  const [link, setLink] = useState(links);
+
+  // Ejemplo de uso de useEffect para inicializar datos
+  useEffect(() => {
+    // Aquí puedes cargar datos iniciales si es necesario
+    console.log('LinkProvider montado');
+  }, []);
+
+  return (
+    <LinkContext.Provider value={{ link, setLink }}>
+      {children}
+    </LinkContext.Provider>
+  );
+}; */
