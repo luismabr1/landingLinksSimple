@@ -88,15 +88,10 @@ const links = {
       id: 5,
       route: 'calidad',
       urlBackOffice: {
-        name: 'Calidad BackOffice',
+        name: 'MoDo Aula Virtual',
         interno: 'http://xetuxmodoqa:9090/posadmin/login.xhtml',
-        externo: 'http://modoccs.ddns.net:9092/posadmin/login.xhtml',
-      },
-      urlBackEnd: {
-        name: 'Calidad BackEnd',
-        interno: 'http://xetuxmodoqa:9090/xc-one-pos/Logout/login/index.xhtml',
-        externo: 'http://modoccs.ddns.net:9092/xc-one-pos/Logout/login/index.xhtml',
-      },
+        externo: 'https://modoccs.com/campus/login/index.php',
+      }
     },
     modoCandelaria:{
       id: 6,
