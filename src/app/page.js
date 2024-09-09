@@ -25,29 +25,29 @@ export default function Home() {
 
         <div className=' md:grid md:grid-cols grid-cols-4 items-center content-center flex-wrap '>
 
-        <Link href='/modo' className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded'>
+        <Link href='/modo' className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded'>
            <button>MoDo</button>
         </Link>
 
-        <Link href="/conceptStore" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+        <Link href="/conceptStore" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
               <button >Concept Store</button>
           </Link>
-          <Link href="/salumeriaChacao" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <Link href="/salumeriaChacao" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
           <button >Salumeria Chacao</button>
           </Link>
-          <Link href="/modoExpress" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <Link href="/modoExpress" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
           <button >Produccion y Acopio Piquin</button>
           </Link>
-          <Link href="/modoCandelaria" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <Link href="/modoCandelaria" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
           <button>MoDo Candelaria</button>
           </Link>
-          <Link href="/modoGlpi" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <Link href="/modoGlpi" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
           <button >MoDo GLPI</button>
           </Link>
-          <Link href="/modoSanLuis" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <Link href="/modoSanLuis" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
             <button >MoDo San Luis</button>
           </Link>
-          <Link href="/modoAulaVirtual" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+          <Link href="/modoAulaVirtual" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
             <button >MoDo Aula Virtual</button>
           </Link>
 

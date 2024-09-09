@@ -12,23 +12,23 @@ const Modo = () => {
     return (
 
             <div className="md:grid md:grid-cols grid-cols-4 items-center content-center flex-wrap" >
-                    <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackOffice.interno} passHref>
+                    <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackOffice.interno} passHref>
                         {links.modo.urlBackOffice.name} Interno
                     </Link>
-                     <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackOffice.externo} passHref>
+                     <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackOffice.externo} passHref>
                             <span >{links.modo.urlBackOffice.name} Externo</span>
                         </Link>
                            
-                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackOffice.alternoExterno} passHref>
+                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackOffice.alternoExterno} passHref>
                             <span >{links.modo.urlBackOffice.name} Alternativo Externo</span>
                         </Link>
-                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackEnd.interno} passHref>
+                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackEnd.interno} passHref>
                             <span >{links.modo.urlBackEnd.name} Interno</span>
                         </Link>
-                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackEnd.externo} passHref>
+                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackEnd.externo} passHref>
                             <span >{links.modo.urlBackEnd.name} Externo</span>
                         </Link>
-                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackEnd.alternoExterno} passHref>
+                        <Link className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer" href={links.modo.urlBackEnd.alternoExterno} passHref>
                             <span >{links.modo.urlBackEnd.name} Alternativo Externo</span>
                         </Link> 
 </div>

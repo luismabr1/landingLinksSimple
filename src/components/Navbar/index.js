@@ -12,7 +12,7 @@ const Navbar = () => {
   const {setTheme, theme } = useTheme();
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 dark:text-white bg-white mb-3 dark:bg-slate-900">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 dark:text-white bg-white mb-3 dark:bg-black">
 		
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -23,14 +23,15 @@ const Navbar = () => {
               className="flex text-white dark:text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent lg:hidden  outline-none focus:outline-none"
               type="button"
             >			
-				<span className="space-x-4 mr-5"  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-					<ToggleModeIcon />
-				</span>
+
             </button>
             <button
               className="flex text-white dark:text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent lg:hidden  outline-none focus:outline-none"
               type="button"
-            >			
+            >
+			<span className="space-x-4 "  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+				<ToggleModeIcon />
+			</span>	
 			<span className='invert dark:invert-0' onClick={() => setNavbarOpen(!navbarOpen)}>
               <BarsIcon />
 			</span>
@@ -60,7 +61,7 @@ const Navbar = () => {
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
 					
 					>
-					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Salumeria Chacao</span>
+					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Salumeria</span>
 					</span>
 				</Link>
               </li>
@@ -78,7 +79,7 @@ const Navbar = () => {
 					<span
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
 					>
-					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Produccion y Acopio Piquin</span>
+					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Produccion Piquin</span>
 					</span>
 				</Link>
               </li>
@@ -105,7 +106,7 @@ const Navbar = () => {
 					<span
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
 					>
-					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">MoDo Aula Virtual</span>
+					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Aula Virtual</span>
 					</span>
 				</Link>
               </li>
