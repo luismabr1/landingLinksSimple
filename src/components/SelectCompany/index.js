@@ -5,6 +5,7 @@ import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
 import ModoCandelaria from "../ModoCandelaria";
 import ModoSanLuis from "../ModoSanLuis"; 
+import ModoAulaVirtual from "../ModoAulaVirtual";
 import Modo from "../Modo";
 
 
@@ -33,8 +34,8 @@ const SelectCompany = (props) =>{
   id:'7',
   name:'modoGlpi'
 },{
-  id:'7',
-  name:'modoSanLuis'
+  id:'8',
+  name:'modoAulaVirtual'
 }
 
 ];
@@ -54,6 +55,8 @@ const FormRender = ( {company} ) => {
         return <ModoGlpi />;
       case "modoSanLuis":
         return <ModoSanLuis />;
+      case "modoAulaVirtual":
+        return <ModoAulaVirtual />;
         default:
             return null; 
 
@@ -61,9 +64,9 @@ const FormRender = ( {company} ) => {
   };
 
   return(
-      <>
-    <FormRender company={compania} /> 
-      </>
+      <main className='min-h-fit pt-10 flex-1 flex flex-col justify-center items-center'>
+          <FormRender company={compania} /> 
+      </main>
   )
 
 }

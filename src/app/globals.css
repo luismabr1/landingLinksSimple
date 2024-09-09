@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    background: #753;
+    color: black;
+    outline: 5px dashed #000;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -9,24 +29,26 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  background: white;
+  color: black;
+  &.dark {
+    background: black;
+    color: white;
+  }
+}
+
 a {
-  color: inherit;
-  text-decoration: none;
+  color: steelblue;
+  html.dark & {
+    color: skyblue;
+  }
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: black;
-    background: white;
-  }
-}
 
 /* From uiverse.io by @G4b413l Loading component*/
 .newtons-cradle {

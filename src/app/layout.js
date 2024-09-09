@@ -2,6 +2,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer';
+import { cookies } from "next/headers";
+import dynamic from "next/dynamic";
+
+const AppThemeProvider = dynamic(() => import("@/context/theme"), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +17,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const theme = cookies().get("__theme__")?.value || "system";
   return (
-    <html lang="en">
-      <body className={inter.className}>
-      <Navbar/>
-        {children}
-        <Footer />
+    <html className={theme} lang="en" style={theme !== "system" ? { colorScheme: theme } : {}} >
+      <body className="bg-white dark:bg-black min-h-dvh">
+        <AppThemeProvider  attribute="class" defaultTheme={theme} enableSystem >
+          <Navbar />
+          {children}
+          </AppThemeProvider>
+      <Footer />
       </body>
     </html>
   );

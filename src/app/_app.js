@@ -1,19 +1,16 @@
 import '../styles/globals.css';
 import { LinkProvider } from '../context/LinkContext';
-import { ThemeProvider } from 'next-themes';
 import { useRouter } from 'next/router';
 import Layout from './layout';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
-    <ThemeProvider attribute="class">
-      <Layout>
+    <Layout>
           <LinkProvider>
-              <Component key={router.asPath} {...pageProps} />
+            <Component key={router.asPath} {...pageProps} />
           </LinkProvider>
       </Layout>
-    </ThemeProvider>
   );
 }
 

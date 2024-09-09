@@ -17,8 +17,8 @@ const Company = () => {
     }, [nid])
 
     return (
-            <div className='h-fit p-20 justify-center items-center'>
-                            <p className='text-black dark:text-white text-2xl'>
+            <div className='pb-10 pt-10 h-fit p-20 justify-center items-center'>
+                            <p className='pb-10 pt-10 text-black dark:text-white text-2xl'>
                                     Elija la opción más conveniente{' '}
                             </p>
 

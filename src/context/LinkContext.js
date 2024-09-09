@@ -1,8 +1,10 @@
+'use client'
 import React, { useContext, useState, useEffect } from 'react'
 
 const links = {
     modo:{
         id: 1,
+        nameLink:'MoDo',
         route: 'modo',
         urlBackOffice: {
           name: 'MoDo BackOffice',
@@ -82,7 +84,7 @@ const links = {
           externo: 'http://salumeriahatillo.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
-    calidad:{
+    modoAulaVirtual:{
       id: 5,
       route: 'calidad',
       urlBackOffice: {
@@ -131,7 +133,6 @@ const links = {
 // Crea el contexto
 export const LinkContext = React.createContext({
   links: links,
-  setLinks: async (links) => null,
 });
 
 // Hook personalizado para usar el contexto
@@ -143,35 +144,9 @@ export const LinkProvider = ({ children }) => {
 
 
   return (
-    <LinkContext.Provider value={{ link, setLink }}>
+    <LinkContext.Provider value={{ link}}>
       {children}
     </LinkContext.Provider>
   );
 };
 
-  
-/* // Crea el contexto
-export const LinkContext = React.createContext({
-  links: undefined,
-  setLinks: async (links) => null,
-});
-
-// Hook personalizado para usar el contexto
-export const useLinks = () => useContext(LinkContext);
-
-// Proveedor del contexto
-export const LinkProvider = ({ children }) => {
-  const [link, setLink] = useState(links);
-
-  // Ejemplo de uso de useEffect para inicializar datos
-  useEffect(() => {
-    // Aquí puedes cargar datos iniciales si es necesario
-    console.log('LinkProvider montado');
-  }, []);
-
-  return (
-    <LinkContext.Provider value={{ link, setLink }}>
-      {children}
-    </LinkContext.Provider>
-  );
-}; */

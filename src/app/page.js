@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 
+
 export default function Home() {
   return (
     <>
@@ -11,11 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <h1 className='grid gap-10 text-modo-negro no-underline mt-10
+        <h1 className='grid gap-10 text-modo-negro no-underline mt-10 pb-10
          leading-5 m-0 text-6xl text-center dark:text-white'>
           Bienvenido a <Link className= 'hover:text-neutral-200 dark:hover:text-neutral-200 text-rose-500 active:bg-violet-700 ' href="#" /* target="_blank" rel="noreferrer" */>MoDo </Link> Link!
         </h1>
-      <main className='min-h-fit pt-4 flex-1 flex flex-col justify-center items-center'>
+      <main className='min-h-fit pt-10 flex-1 flex flex-col justify-center items-center'>
 
         <p className='text-black dark:text-white mb-1 text-2xl'>
           Elija una empresa{' '}
@@ -45,6 +46,9 @@ export default function Home() {
           </Link>
           <Link href="/modoSanLuis" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
             <button >MoDo San Luis</button>
+          </Link>
+          <Link href="/modoAulaVirtual" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border border-black hover:border-transparent rounded max-w-xs'>
+            <button >MoDo Aula Virtual</button>
           </Link>
 
 
