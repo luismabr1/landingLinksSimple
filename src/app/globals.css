@@ -5,18 +5,18 @@
 :root {
   /* Your default theme */
   --background: white;
-  --foreground: black;
+  --foreground: #111827;
 }
 
 [data-theme='dark'] {
-  --background: black;
+  --background: #111827;
   --foreground: white;
 }
 
 @media (prefers-color-scheme: dark) {
   .dark {
     background: #753;
-    color: black;
+    color: #111827;
     outline: 5px dashed #000;
   }
 }
@@ -31,17 +31,17 @@ body {
 
 html {
   background: white;
-  color: black;
+  color: #111827;
   &.dark {
-    background: black;
+    background: #111827;
     color: white;
   }
 }
 
 a {
-  color: steelblue;
+  color: white;
   html.dark & {
-    color: skyblue;
+    color: #111827;
   }
 }
 
