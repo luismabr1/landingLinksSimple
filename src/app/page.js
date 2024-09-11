@@ -14,7 +14,7 @@ export default function Home() {
 
         <h1 className='grid gap-10 text-modo-negro no-underline mt-10 pb-10
          leading-5 m-0 text-6xl text-center dark:text-white'>
-          Bienvenido a <Link className= 'hover:text-neutral-200 dark:hover:text-neutral-200' href="https://www.modoccs.com/main" target="_blank" rel="noreferrer" >MoDo </Link> Link!
+          Bienvenido a <Link className= 'text-black dark:text-white hover:text-neutral-200 dark:hover:text-neutral-200' href="https://www.modoccs.com/main" target="_blank" rel="noreferrer" >MoDo </Link> Link!
         </h1>
       <main className='min-h-fit pt-10 flex-1 flex flex-col justify-center items-center'>
 
@@ -36,7 +36,7 @@ export default function Home() {
           <button >Salumeria Chacao</button>
           </Link>
           <Link href="/modoExpress" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
-          <button >Produccion y Acopio Piquin</button>
+          <button >Produccion Piquin</button>
           </Link>
           <Link href="/modoCandelaria" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
           <button>MoDo Candelaria</button>
