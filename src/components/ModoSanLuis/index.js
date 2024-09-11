@@ -7,7 +7,7 @@ const ModoSanLuis = () => {
     const {links, setLink}= useLinks()
 
     return (
-<div className="md:grid md:grid-cols grid-cols-4 items-center content-center flex-wrap">
+<div className="md:grid md:grid-cols grid-cols-1 items-center content-center flex-wrap">
 {/*                         <Link href={link.produccionPiquin.urlBackOffice.interno}>
                             <Link className="bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded m-5 p-9" target="_blank" rel="noreferrer">{link.produccionPiquin.urlBackOffice.name} Interno</Link>
                         </Link> */}
