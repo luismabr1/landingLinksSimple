@@ -8,7 +8,8 @@ import Loading from '../../components/Loading';
 const Company = () => {
     const router = useRouter()
 
-    const {nid} = useParams()
+    const {nid} = useParams() 
+
     useEffect(() => {
         if (!nid) {
             return
@@ -29,4 +30,6 @@ const Company = () => {
                 
     )
 }
-export default Company
+export default Company 
+
+
