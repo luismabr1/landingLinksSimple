@@ -36,7 +36,7 @@ const Navbar = () => {
 					<BarsIcon />
 				</span>
 
-			<ul transition='true' className={"absolute flex-col right-0 z-10 mt-3 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in" + (navbarOpenMobile ? " flex" : " hidden")}>
+			<ul transition='true' className={"absolute flex-col right-1/2 z-10 mt-3 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in" + (navbarOpenMobile ? " flex" : " hidden")}>
 				<div className="py-1">
 					<Link href="/modo"
 					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
@@ -96,7 +96,7 @@ const Navbar = () => {
 
           <div
             className={
-              "lg:flex flex-grow items-center sm:hidden md:hidden " + (navbarOpen ? " flex" : " hidden")
+              "lg:flex flex-grow items-center sm:hidden md:hidden " + (navbarOpen ? "flex" : "hidden")
             }
             id="menu"
           >
