@@ -113,7 +113,7 @@ const links = {
       url: {
         name: 'Glpi',
         interno: 'http://glpi.modo.local/',
-        externo: 'http://modoletonia.ddns.net:8095/',
+        externo: 'http://modoccs.ddns.net:8095/',
       },
   },
     modoSanLuis:{
