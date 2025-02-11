@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import { LinkProvider } from '../context/LinkContext';
+import { LinkProvider } from '../contexts/LinkContext';
 import { useRouter } from 'next/router';
 import Layout from './layout';
 
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
           <LinkProvider>
             <Component key={router.asPath} {...pageProps} />
           </LinkProvider>
-      </Layout>
+    </Layout>
   );
 }
 

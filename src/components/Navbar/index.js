@@ -86,6 +86,13 @@ const Navbar = () => {
 				             Aula Virtual
 					</Link>
 				</div>
+				<div className="py-1">
+					<Link href="/register"
+					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+					>
+				             Register
+					</Link>
+				</div>
 
 			</ul>
 			</div>
@@ -166,6 +173,16 @@ const Navbar = () => {
 					</span>
 				</Link>
               </li>
+			  <li>
+			  <div className="py-1">
+					<Link href="/register"
+					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
+					>
+				             Register
+					</Link>
+				</div>
+			  </li>
+
 			  <div className={"space-x-4" + (navbarOpen ? " hidden" : " flex")}>
 				<span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
 					<ToggleModeIcon />

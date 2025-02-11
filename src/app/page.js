@@ -50,6 +50,9 @@ export default function Home() {
           <Link href="/modoAulaVirtual" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
             <button >MoDo Aula Virtual</button>
           </Link>
+          <Link href="/Extractores" className='flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded max-w-xs'>
+            <button >ExXetux</button>
+          </Link>
 
 
 

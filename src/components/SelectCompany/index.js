@@ -6,6 +6,7 @@ import Salumeria from "../Salumeria";
 import ModoCandelaria from "../ModoCandelaria";
 import ModoSanLuis from "../ModoSanLuis"; 
 import ModoAulaVirtual from "../ModoAulaVirtual";
+import Extractores from "../Extractores";
 import Modo from "../Modo";
 
 
@@ -36,6 +37,9 @@ const SelectCompany = (props) =>{
 },{
   id:'8',
   name:'modoAulaVirtual'
+},{
+  id:'9',
+  name:'exetux'
 }
 
 ];
@@ -57,6 +61,8 @@ const FormRender = ( {company} ) => {
         return <ModoSanLuis />;
       case "modoAulaVirtual":
         return <ModoAulaVirtual />;
+      case "Extractores":
+        return <Extractores />;
         default:
             return null; 
 

@@ -4,8 +4,9 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer';
 import { cookies } from "next/headers";
 import dynamic from "next/dynamic";
+import { AuthProvider } from "../contexts/AuthContext"
 
-const AppThemeProvider = dynamic(() => import("@/context/theme"), {
+const AppThemeProvider = dynamic(() => import("@/contexts/theme"), {
   ssr: false,
 });
 
@@ -22,8 +23,10 @@ export default function RootLayout({ children }) {
     <html className={theme} lang="en" style={theme !== "system" ? { colorScheme: theme } : {}} >
       <body className="bg-white dark:bg-black min-h-dvh">
         <AppThemeProvider  attribute="class" defaultTheme={theme} enableSystem >
-          <Navbar />
-          {children}
+          <AuthProvider>
+            <Navbar />
+            {children}
+          </AuthProvider>
           </AppThemeProvider>
       <Footer />
       </body>

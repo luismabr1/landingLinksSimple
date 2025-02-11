@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
-import {useLinks} from '../../context/LinkContext'
+import {useLinks} from '../../contexts/LinkContext'
 
 const ModoConceptStore = () => {
 

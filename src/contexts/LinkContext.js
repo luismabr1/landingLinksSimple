@@ -123,6 +123,14 @@ const links = {
       name: 'Modo San Luis',
       externo: 'http://piquinsanluis.ddns.net:9090/posadmin/login.xhtml',
     },
+},
+extractoresXetux:{
+  id: 7,
+  route: 'exetux',
+  url: {
+    name: 'Modo CCS EX',
+    externo: '#',
+  },
 }
 }
 // Crea el contexto
