@@ -180,7 +180,7 @@ const URLBuilder = () => {
         setError('');
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/convert', { 
+            const response = await fetch('https://xetuxprueba.universovideoludico.com/convert', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -196,7 +196,7 @@ const URLBuilder = () => {
             const data = await response.json();
             setMessage(data.message);
 
-            const downloadLink = `http://localhost:5000/download/${data.file_id}`;
+            const downloadLink = `http://xetuxprueba.universovideoludico.com/download/${data.file_id}`;
 
             const link = document.createElement('a');
             link.href = downloadLink;
