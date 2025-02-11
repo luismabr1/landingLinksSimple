@@ -8,6 +8,7 @@ import ModoSanLuis from "../ModoSanLuis";
 import ModoAulaVirtual from "../ModoAulaVirtual";
 import Extractores from "../Extractores";
 import Modo from "../Modo";
+import URLBuilder from "../URLBuilder";
 
 
 const SelectCompany = (props) =>{
@@ -40,6 +41,9 @@ const SelectCompany = (props) =>{
 },{
   id:'9',
   name:'exetux'
+},{
+  id:'10',
+  name:'urlbuilder'
 }
 
 ];
@@ -63,6 +67,8 @@ const FormRender = ( {company} ) => {
         return <ModoAulaVirtual />;
       case "Extractores":
         return <Extractores />;
+      case "urlbuilder":
+        return <URLBuilder />;
         default:
             return null; 
 

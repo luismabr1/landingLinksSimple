@@ -50,7 +50,7 @@ export default function AuthModal({ onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg">
+      <div className="black:bg-white p-6 rounded-lg border shadow-lg w-full max-w-sm">
         <h2 className="text-xl font-bold mb-4">{isLogin ? "Iniciar Sesión" : "Registrarse"}</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>

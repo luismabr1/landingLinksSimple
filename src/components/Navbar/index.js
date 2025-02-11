@@ -5,10 +5,12 @@ import { useTheme } from "next-themes";
 import ToggleModeIcon from '../ToggleModeIcon';
 import Link from 'next/link';
 import BarsIcon from '../BarsIcon';
+import { useAuth } from "../../contexts/AuthContext"
 
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const { isAuthenticated, isLoading } = useAuth()
   const [navbarOpenMobile, setNavbarOpenMobile] = useState(false)
   const {setTheme, theme } = useTheme();
   return (
@@ -173,15 +175,16 @@ const Navbar = () => {
 					</span>
 				</Link>
               </li>
-			  <li>
-			  <div className="py-1">
-					<Link href="/register"
-					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
-					>
-				             Register
-					</Link>
-				</div>
-			  </li>
+				{
+					isAuthenticated ? (
+						<li>
+							<Link href="/register" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75">
+							Register
+							</Link>
+						</li>
+					) : null
+				}
+
 
 			  <div className={"space-x-4" + (navbarOpen ? " hidden" : " flex")}>
 				<span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>

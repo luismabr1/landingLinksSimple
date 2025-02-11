@@ -129,7 +129,7 @@ extractoresXetux:{
   route: 'exetux',
   url: {
     name: 'Modo CCS EX',
-    externo: '#',
+    externo: '/urlbuilder',
   },
 }
 }

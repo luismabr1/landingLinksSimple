@@ -14,20 +14,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MoDo Link",
-  description: "Actualizacion de version anterior a 14",
+  description: "MoDo Links para MoDo CCS",
 };
 
 export default function RootLayout({ children }) {
   const theme = cookies().get("__theme__")?.value || "system";
   return (
     <html className={theme} lang="en" style={theme !== "system" ? { colorScheme: theme } : {}} >
-      <body className="bg-white dark:bg-black min-h-dvh">
+      <body className="bg-white dark:bg-black min-h-dvh ">
         <AppThemeProvider  attribute="class" defaultTheme={theme} enableSystem >
           <AuthProvider>
             <Navbar />
             {children}
           </AuthProvider>
-          </AppThemeProvider>
+        </AppThemeProvider>
       <Footer />
       </body>
     </html>
