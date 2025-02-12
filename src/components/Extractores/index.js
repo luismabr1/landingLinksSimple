@@ -3,7 +3,6 @@ import Link from 'next/link'
 import PrivateContent from '../PrivateContent'
 import AuthStatus from '../AuthStatus'
 import {useLinks} from '../../contexts/LinkContext'
-import AccessButton from '../AccessButton'
 
 const Extractores = () => {
     const {links, setLink}= useLinks()

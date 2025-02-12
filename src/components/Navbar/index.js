@@ -10,7 +10,7 @@ import { useAuth } from "../../contexts/AuthContext"
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
-  const { isAuthenticated, isLoading } = useAuth()
+  const { isAuthenticated, isLoading, logout} = useAuth()
   const [navbarOpenMobile, setNavbarOpenMobile] = useState(false)
   const {setTheme, theme } = useTheme();
   return (
@@ -68,13 +68,6 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div className="py-1">
-					<Link href="/modoSanLuis"
-					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-					>
-				             MoDo San Luis
-					</Link>
-				</div>
-				<div className="py-1">
 					<Link href="/modoGlpi"
 					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
 					>
@@ -89,13 +82,26 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div className="py-1">
-					<Link href="/register"
+					<Link href="/Extractores"
 					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
 					>
-				             Register
+				             Extractores
 					</Link>
 				</div>
-
+				{
+					isAuthenticated ? (
+						<div className="py-1">
+							<Link href="/register" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75">
+							Register
+							</Link>
+						</div>
+					) : null
+				}
+				<div className="py-1">
+					<button onClick={logout} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+						Cerrar Sesión
+					</button>
+				</div>
 			</ul>
 			</div>
 			
@@ -149,15 +155,6 @@ const Navbar = () => {
 				</Link>
               </li>
 			  <li className="nav-item">
-				<Link href="/modoSanLuis">
-					<span
-					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
-					>
-					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">MoDo San Luis</span>
-					</span>
-				</Link>
-              </li>
-			  <li className="nav-item">
 				<Link href="/modoGlpi">
 					<span
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
@@ -175,6 +172,15 @@ const Navbar = () => {
 					</span>
 				</Link>
               </li>
+			  <li className="nav-item">
+			  <Link href="/Extractores">
+					<span
+					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
+					>
+					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Extractores</span>
+					</span>
+				</Link>
+			  </li>
 				{
 					isAuthenticated ? (
 						<li>
@@ -184,7 +190,15 @@ const Navbar = () => {
 						</li>
 					) : null
 				}
-
+				{
+					isAuthenticated ? (
+						<li>
+							<button onClick={logout} className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75">
+							Cerrar Sesión
+							</button>
+						</li>
+					) : null
+				}
 
 			  <div className={"space-x-4" + (navbarOpen ? " hidden" : " flex")}>
 				<span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>

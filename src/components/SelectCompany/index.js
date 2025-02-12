@@ -10,9 +10,9 @@ import Extractores from "../Extractores";
 import Modo from "../Modo";
 import URLBuilder from "../URLBuilder";
 
-const compras = 'http://192.168.10.20:9090/xconnect/api/ExtractionData/PurchaseFull';
-const ventas = 'http://192.168.50.8:9090/xconnect/api/ExtractionData/SalesFull'
-const pay = 'http://192.168.50.8:9090/xconnect/api/ExtractionData/SalesPay'
+const compras = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/PurchaseFull`;
+const ventas = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesFull`
+const pay = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesPay`
 
 
 const SelectCompany = (props) =>{
@@ -72,11 +72,11 @@ const FormRender = ( {company} ) => {
       case "Extractores":
         return <Extractores />;
       case "ExCompras":
-        return <URLBuilder baseUrl={compras} />;
+        return <URLBuilder baseUrl={compras} title='Excompras' />;
       case "ExVentas":
-        return <URLBuilder baseUrl={ventas}/>;
+        return <URLBuilder baseUrl={ventas} title='ExVentas'/>;
       case "ExPay":
-        return <URLBuilder baseUrl={pay}/>;
+        return <URLBuilder baseUrl={pay} title='ExPay'/>;
         default:
             return null; 
 
