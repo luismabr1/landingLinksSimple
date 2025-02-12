@@ -4,7 +4,6 @@ import ModoGlpi from "../ModoGlpi";
 import ModoExpress from "../ModoExpress";
 import Salumeria from "../Salumeria";
 import ModoCandelaria from "../ModoCandelaria";
-import ModoSanLuis from "../ModoSanLuis"; 
 import ModoAulaVirtual from "../ModoAulaVirtual";
 import Extractores from "../Extractores";
 import Modo from "../Modo";
@@ -13,6 +12,9 @@ import URLBuilder from "../URLBuilder";
 const compras = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/PurchaseFull`;
 const ventas = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesFull`
 const pay = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesPay`
+const comprasCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/PurchaseFull`;
+const ventasCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesFull`
+const payCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesPay`
 
 
 const SelectCompany = (props) =>{
@@ -30,23 +32,20 @@ const SelectCompany = (props) =>{
 }, {
     id:'4',
     name:'conceptStore'
-}, {
-    id:'5',
-    name:'salumeriaHatillo'
-}, {
-  id:'6',
+},{
+  id:'5',
   name:'modoCandelaria'
 },{
-  id:'7',
+  id:'6',
   name:'modoGlpi'
 },{
-  id:'8',
+  id:'7',
   name:'modoAulaVirtual'
 },{
-  id:'9',
+  id:'8',
   name:'exetux'
 },{
-  id:'10',
+  id:'9',
   name:'urlbuilder'
 }
 
@@ -65,8 +64,6 @@ const FormRender = ( {company} ) => {
         return <ModoCandelaria />;
       case "modoGlpi":
         return <ModoGlpi />;
-      case "modoSanLuis":
-        return <ModoSanLuis />;
       case "modoAulaVirtual":
         return <ModoAulaVirtual />;
       case "Extractores":
@@ -77,6 +74,12 @@ const FormRender = ( {company} ) => {
         return <URLBuilder baseUrl={ventas} title='ExVentas'/>;
       case "ExPay":
         return <URLBuilder baseUrl={pay} title='ExPay'/>;
+        case "ExComprasCandelaria":
+          return <URLBuilder baseUrl={comprasCandelaria} title='Excompras Candelaria' />;
+        case "ExVentas Candelaria":
+          return <URLBuilder baseUrl={ventasCandelaria} title='ExVentas Candelaria'/>;
+        case "ExPay Candelaria":
+          return <URLBuilder baseUrl={payCandelaria} title='ExPay Candelaria'/>;
         default:
             return null; 
 

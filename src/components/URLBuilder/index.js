@@ -31,7 +31,7 @@ const URLBuilder = ({ baseUrl, title }) => { // Recibe baseUrl como prop
         setError('');
 
         try {
-            const response = await fetch('https://xetuxprueba.universovideoludico.com/convert', {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL_MODO}/convert`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ const URLBuilder = ({ baseUrl, title }) => { // Recibe baseUrl como prop
             const data = await response.json();
             setMessage(data.message);
 
-            const downloadLink = `https://xetuxprueba.universovideoludico.com/download/${data.file_id}`;
+            const downloadLink = `${process.env.NEXT_PUBLIC_API_URL_MODO}/download/${data.file_id}`;
 
             const link = document.createElement('a');
             link.href = downloadLink;

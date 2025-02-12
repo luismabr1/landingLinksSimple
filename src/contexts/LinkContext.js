@@ -36,24 +36,7 @@ const links = {
           
       },
       },
-      produccionPiquin:{
-        id: 3,
-        route: 'produccionPiquin',
-        urlBackOffice: {
-          name: 'Produccion y Acopio BackOffice',
-          interno: 'http://xetuxcds:9090/posadmin/login.xhtml',
-          externo: 'http://modoccs.ddns.net:9090/posadmin/login.xhtml',
-          alternoExterno:'http://modoccs.sytes.net:9090/posadmin/login.xhtml',
 
-        },
-        urlBackEnd: {
-          name: 'Produccion y Acopio BackEnd',
-          interno: 'http://xetuxcds:9090/xc-one-pos/Logout/login/index.xhtml',
-          externo: 'http://modoccs.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
-          alternoExterno:'http://modoccs.sytes.net:9090/xc-one-pos/Logout/login/index.xhtml',
-
-      },
-      },
       salumeriaC:{
         id: 4,
         route: 'salumeriaChacao',
@@ -68,20 +51,6 @@ const links = {
           interno: 'http://xesacentral:9090/xc-one-pos/Logout/login/index.xhtml',
           externo: 'http://modoccs.ddns.net:9094/xc-one-pos/Logout/login/index.xhtml',
           alternoExterno:'http://modoccs.sytes.net:9094/xc-one-pos/Logout/login/index.xhtml',
-      },
-      },
-      salumeriaH:{
-        id: 4,
-        route: 'salumeriaHatillo',
-        urlBackOffice: {
-          name: 'Salumeria Hatillo BackOffice',
-          interno: 'http://xesaha:9090/posadmin/login.xhtml',
-          externo: 'http://salumeriahatillo.ddns.net:9090/posadmin/login.xhtml',
-        },
-        urlBackEnd: {
-          name: 'Salumeria Hatillo BackEnd',
-          interno: 'http://xesaha:9090/xc-one-pos/Logout/login/index.xhtml',
-          externo: 'http://salumeriahatillo.ddns.net:9090/xc-one-pos/Logout/login/index.xhtml',
       },
       },
     modoAulaVirtual:{
@@ -116,30 +85,35 @@ const links = {
         externo: 'http://modoccs.ddns.net:8095/',
       },
   },
-    modoSanLuis:{
-    id: 7,
-    route: 'modoSanLuis',
-    url: {
-      name: 'Modo San Luis',
-      externo: 'http://piquinsanluis.ddns.net:9090/posadmin/login.xhtml',
+
+    extractoresXetux:{
+      id: 7,
+      route: 'exetux',
+      urlCompras: {
+        name: 'Compras EX',
+        interno: '/ExCompras',
+      },
+      urlVentas: {
+        name: 'Ventas EX',
+        interno: '/ExVentas',
+      },
+      urlPay: {
+        name: 'Pay EX',
+        interno: '/ExPay',
+      },
+      urlComprasCandelaria: {
+        name: 'Compras EX Candelaria',
+        interno: '/ExComprasCandelaria',
+      },
+      urlVentasCandelaria: {
+        name: 'Ventas EX Candelaria',
+        interno: '/ExVentasCandelaria',
+      },
+      urlPayCandelaria: {
+        name: 'Pay EX Candelaria',
+        interno: '/ExPayCandelaria',
+      },
     },
-},
-extractoresXetux:{
-  id: 7,
-  route: 'exetux',
-  urlCompras: {
-    name: 'Compras EX',
-    interno: '/ExCompras',
-  },
-  urlVentas: {
-    name: 'Ventas EX',
-    interno: '/ExVentas',
-  },
-  urlPay: {
-    name: 'Pay EX',
-    interno: '/ExPay',
-  },
-}
 }
 // Crea el contexto
 export const LinkContext = React.createContext({

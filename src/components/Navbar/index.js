@@ -61,13 +61,6 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div className="py-1">
-					<Link href="/modoExpress"
-					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-					>
-				             Produccion Piquin
-					</Link>
-				</div>
-				<div className="py-1">
 					<Link href="/modoGlpi"
 					className="block px-4 py-2 text-sm text-gray-900 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
 					>
@@ -142,15 +135,6 @@ const Navbar = () => {
 					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
 					>
 					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Concept Store</span>
-					</span>
-				</Link>
-              </li>
-			  <li className="nav-item">
-				<Link href="/modoExpress">
-					<span
-					className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black dark:text-white hover:opacity-75"
-					>
-					<i className="text-lg leading-lg text-black dark:text-white opacity-75"></i><span className="ml-2">Produccion Piquin</span>
 					</span>
 				</Link>
               </li>

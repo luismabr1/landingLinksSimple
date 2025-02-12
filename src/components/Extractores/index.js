@@ -9,16 +9,25 @@ const Extractores = () => {
     return (
         <>
             <AuthStatus />
-            <div className="md:grid md:grid-cols grid-cols-1 items-center content-center flex-wrap">
+            <div className="md:grid md:grid-cols grid-cols-3 items-center content-center flex-wrap">
                 <PrivateContent>
-                        <Link href={links.extractoresXetux.urlCompras.interno}>
-                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlCompras.name}</span>
+                        <Link  href={links.extractoresXetux.urlCompras.interno}>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlCompras.name} MoDO</span>
                         </Link>
                         <Link href={links.extractoresXetux.urlVentas.interno}>
-                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlVentas.name}</span>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlVentas.name} MoDO</span>
                         </Link>
                         <Link href={links.extractoresXetux.urlPay.interno}>
-                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlPay.name}</span>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlPay.name} MoDO</span>
+                        </Link>
+                        <Link href={links.extractoresXetux.urlComprasCandelaria.interno}>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlCompras.name} Candelaria</span>
+                        </Link>
+                        <Link href={links.extractoresXetux.urlVentasCandelaria.interno}>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlVentas.name} Candelaria</span>
+                        </Link>
+                        <Link href={links.extractoresXetux.urlPayCandelaria.interno}>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlPay.name} Candelaria</span>
                         </Link>
                 </PrivateContent>
             </div>
