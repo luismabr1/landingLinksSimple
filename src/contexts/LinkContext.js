@@ -127,9 +127,17 @@ const links = {
 extractoresXetux:{
   id: 7,
   route: 'exetux',
-  url: {
-    name: 'Modo CCS EX',
-    externo: '/urlbuilder',
+  urlCompras: {
+    name: 'Compras EX',
+    interno: '/ExCompras',
+  },
+  urlVentas: {
+    name: 'Ventas EX',
+    interno: '/ExVentas',
+  },
+  urlPay: {
+    name: 'Pay EX',
+    interno: '/ExPay',
   },
 }
 }

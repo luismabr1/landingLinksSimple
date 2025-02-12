@@ -10,6 +10,10 @@ import Extractores from "../Extractores";
 import Modo from "../Modo";
 import URLBuilder from "../URLBuilder";
 
+const compras = 'http://192.168.10.20:9090/xconnect/api/ExtractionData/PurchaseFull';
+const ventas = 'http://192.168.50.8:9090/xconnect/api/ExtractionData/SalesFull'
+const pay = 'http://192.168.50.8:9090/xconnect/api/ExtractionData/SalesPay'
+
 
 const SelectCompany = (props) =>{
   const [compania, setCompania] = useState(props.company)
@@ -67,8 +71,12 @@ const FormRender = ( {company} ) => {
         return <ModoAulaVirtual />;
       case "Extractores":
         return <Extractores />;
-      case "urlbuilder":
-        return <URLBuilder />;
+      case "ExCompras":
+        return <URLBuilder baseUrl={compras} />;
+      case "ExVentas":
+        return <URLBuilder baseUrl={ventas}/>;
+      case "ExPay":
+        return <URLBuilder baseUrl={pay}/>;
         default:
             return null; 
 
