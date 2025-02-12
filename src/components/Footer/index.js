@@ -16,8 +16,8 @@ const Footer = () => {
                 <div className='pt-10 flex items-center justify-center text-modo-negro dark:text-white'>
 
                     Powered by{' '}
-                    <span className='invert-0 dark:invert h-8 ml-2 '>
-                    <LogoModo />
+                    <span className='h-8 ml-2 '>
+                        <LogoModo />
                     </span>
                 </div>
                 </Link>
