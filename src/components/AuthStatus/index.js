@@ -12,7 +12,7 @@ export default function AuthStatus() {
     return (
       <div className="flex items-center space-x-4">
         <span>Bienvenido, {username}</span>
-        <button onClick={logout} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+        <button onClick={logout} className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded">
           Cerrar Sesión
         </button>
       </div>
@@ -23,7 +23,7 @@ export default function AuthStatus() {
     <>
       <button
         onClick={() => setIsModalOpen(true)}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded"
       >
         Acceso
       </button>

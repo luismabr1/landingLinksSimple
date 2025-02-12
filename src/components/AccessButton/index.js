@@ -1,24 +1,3 @@
-/* "use client"
-
-import { useState } from "react"
-import AuthModal from "../AuthModal"
-
-export default function AccessButton() {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  return (
-    <>
-      <button
-        onClick={() => setIsModalOpen(true)}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Acceso
-      </button>
-      {isModalOpen && <AuthModal onClose={() => setIsModalOpen(false)} />}
-    </>
-  )
-} */
-
 "use client"
 
 import { useState } from "react"
@@ -36,7 +15,7 @@ export default function AccessButton() {
     <>
       <button
         onClick={() => setIsModalOpen(true)}
-        className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+        className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded"
       >
         Acceso
       </button>

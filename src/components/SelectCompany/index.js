@@ -76,20 +76,23 @@ const FormRender = ( {company} ) => {
         return <URLBuilder baseUrl={pay} title='ExPay'/>;
         case "ExComprasCandelaria":
           return <URLBuilder baseUrl={comprasCandelaria} title='Excompras Candelaria' />;
-        case "ExVentas Candelaria":
+        case "ExVentasCandelaria":
           return <URLBuilder baseUrl={ventasCandelaria} title='ExVentas Candelaria'/>;
-        case "ExPay Candelaria":
+        case "ExPayCandelaria":
           return <URLBuilder baseUrl={payCandelaria} title='ExPay Candelaria'/>;
         default:
             return null; 
 
      } 
-  };
+  }
 
   return(
-      <main className='min-h-fit pt-10 flex-1 flex flex-col justify-center items-center'>
+    <>
+        <main className='min-h-fit pt-10 flex-1 flex flex-col justify-center items-center text-white bg-red dark:bg-red'>
           <FormRender company={compania} /> 
-      </main>
+        </main>
+    </>
+
   )
 
 }

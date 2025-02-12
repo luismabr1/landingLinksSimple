@@ -9,6 +9,7 @@ export default function AuthModal({ onClose }) {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
+  const [message, setMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const { login } = useAuth()
 
@@ -16,6 +17,7 @@ export default function AuthModal({ onClose }) {
     e.preventDefault()
     setIsLoading(true)
     setError("")
+    setMessage("")
 
     const endpoint = isLogin ? "/api/login" : "/api/register"
     const body = isLogin ? { username, password } : { username, email, password }
@@ -35,7 +37,7 @@ export default function AuthModal({ onClose }) {
           onClose()
         } else {
           setIsLogin(true)
-          setError("Registro exitoso. Por favor, inicia sesión.")
+          setMessage("Registro exitoso. Por favor, inicia sesión.")
         }
       } else {
         setError(data.message || "An error occurred")
@@ -49,10 +51,11 @@ export default function AuthModal({ onClose }) {
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div className="fixed inset-0 bg-black bg-opacity-100 flex justify-center items-center">
       <div className="black:bg-white p-6 rounded-lg border shadow-lg w-full max-w-sm">
         <h2 className="text-xl font-bold mb-4">{isLogin ? "Iniciar Sesión" : "Registrarse"}</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
+        {message && <p className="text-green-500 mb-4">{message}</p>}
         <form onSubmit={handleSubmit}>
           <input
             type="text"
