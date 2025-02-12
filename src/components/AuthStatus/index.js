@@ -10,7 +10,7 @@ export default function AuthStatus() {
 
   if (isAuthenticated) {
     return (
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 text-black dark:text-white">
         <span>Bienvenido, {username}</span>
         <button onClick={logout} className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded">
           Cerrar Sesión

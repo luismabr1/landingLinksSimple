@@ -63,35 +63,35 @@ const URLBuilder = ({ baseUrl, title }) => { // Recibe baseUrl como prop
 
     return (
         <div className="bg-white dark:bg-black p-6 rounded-lg shadow-lg mb-10"> {/* Contenedor principal */}
-        <h1 className="text-2xl font-bold mb-4">{title}</h1> {/* Título de la sección */}
+        <h1 className="text-2xl font-bold mb-4 text-black">{title}</h1> {/* Título de la sección */}
             <div className="mb-4"> {/* Contenedor para las fechas */}
                 <div className="mb-2"> {/* Contenedor para fecha de inicio */}
-                    <label htmlFor="dateFrom" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                    <label htmlFor="dateFrom" className="block text-sm font-medium text-black dark:text-white">
                         Fecha de inicio:
                     </label>
                     <DatePicker
                         selected={dateFrom}
                         onChange={(date) => setDateFrom(date)}
                         dateFormat="yyyy/MM/dd"
-                        className="border border-gray-300 dark:border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el DatePicker
+                        className="border border-black text-black dark:border-black rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el DatePicker
                     />
                 </div>
                 <div> {/* Contenedor para fecha de fin */}
-                    <label htmlFor="dateEnd" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                    <label htmlFor="dateEnd" className="block text-sm font-medium text-black dark:text-white">
                         Fecha de fin:
                     </label>
                     <DatePicker
                         selected={dateEnd}
                         onChange={(date) => setDateEnd(date)}
                         dateFormat="yyyy/MM/dd"
-                        className="border border-gray-300 dark:border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el DatePicker
+                        className="border border-black text-black dark:border-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el DatePicker
                     />
                 </div>
             </div>
 
             <button
                 onClick={handleGenerateURL}
-                className="bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded dark:bg-gray-300 dark:hover:bg-gray-500 shadow-md" // Estilos para el botón "Generar URL"
+                className="bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded dark:bg-white dark:hover:bg-gray-500 shadow-md" // Estilos para el botón "Generar URL"
             >
                 Generar URL
             </button>
@@ -103,7 +103,7 @@ const URLBuilder = ({ baseUrl, title }) => { // Recibe baseUrl como prop
                     onChange={(e) => setUrl(e.target.value)}
                     placeholder="URL"
                     readOnly
-                    className="border border-gray-300 dark:border-gray-700 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el input
+                    className="border border-black dark:border-gray-700 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el input
                 />
                 <button
                     type="submit"
