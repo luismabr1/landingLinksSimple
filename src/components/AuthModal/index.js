@@ -80,7 +80,7 @@ export default function AuthModal({ onClose }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Contraseña"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border rounded text-black dark:text-white"
             required
           />
           <div className="flex justify-between">

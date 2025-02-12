@@ -103,7 +103,7 @@ const URLBuilder = ({ baseUrl, title }) => { // Recibe baseUrl como prop
                     onChange={(e) => setUrl(e.target.value)}
                     placeholder="URL"
                     readOnly
-                    className="border border-black dark:border-gray-700 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-300" // Estilos para el input
+                    className="border border-black text-black dark:text-white dark:border-black rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800" // Estilos para el input
                 />
                 <button
                     type="submit"
