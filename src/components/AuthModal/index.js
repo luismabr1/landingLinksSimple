@@ -86,7 +86,7 @@ export default function AuthModal({ onClose }) {
           <div className="flex justify-between">
             <button
               type="submit"
-              className="bg-white hover:bg-gray-700 text-black dark:text-white border dark:border-white border-black font-bold py-2 px-4 rounded flex items-center"
+              className="bg-white dark:bg-black dark:hover:bg-white hover:bg-gray-700 hover:text-white text-black dark:text-white dark:hover:text-black border dark:border-white border-black font-bold py-2 px-4 rounded flex items-center"
               disabled={isLoading}
             >
               {isLoading ? (
