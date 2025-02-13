@@ -5,6 +5,8 @@ import bcrypt from "bcryptjs"
 
 export async function POST(request) {
   const { username, password } = await request.json()
+  const clientIp = request.headers.get("x-forwarded-for") || "Unknown"
+  const userAgent = request.headers.get("user-agent") || "Unknown"
 
   // Buscar el usuario
   const { data: user, error: userError } = await supabase.from("users").select("*").eq("username", username).single()
@@ -41,11 +43,24 @@ export async function POST(request) {
     })
   }
 
-  // Set is_authorized to true
-  const { error: updateError } = await supabase.from("users").update({ is_authorized: true }).eq("id", user.id)
+  // Registrar el inicio de sesión en la tabla user_logins
+  const now = new Date().toISOString()
+  const { error: loginError } = await supabase.from("user_logins").insert({
+    user_id: user.id,
+    login_timestamp: now,
+    ip_address: clientIp,
+    user_agent: userAgent,
+  })
+
+  if (loginError) {
+    console.error("Error al registrar el inicio de sesión:", loginError)
+  }
+
+  // Actualizar last_login en la tabla users
+  const { error: updateError } = await supabase.from("users").update({ last_login: now }).eq("id", user.id)
 
   if (updateError) {
-    console.error("Error al actualizar is_authorized:", updateError)
+    console.error("Error al actualizar last_login:", updateError)
   }
 
   // Establecer la cookie con el token
@@ -63,7 +78,8 @@ export async function POST(request) {
         id: user.id,
         username: user.username,
         email: user.email,
-        is_authorized: true,
+        is_authorized: user.is_authorized,
+        last_login: now,
       },
     }),
     {

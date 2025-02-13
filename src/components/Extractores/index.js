@@ -4,6 +4,7 @@ import PrivateContent from '../PrivateContent'
 import AuthStatus from '../AuthStatus'
 import {useLinks} from '../../contexts/LinkContext'
 import { useAuth } from '../../contexts/AuthContext'
+import LoginHistory from '../LoginHistory'
 
 const Extractores = () => {
     const {links, setLink}= useLinks()
@@ -11,6 +12,7 @@ const Extractores = () => {
     return (
         <>
             <AuthStatus />
+            <LoginHistory />
             <div className={`md:grid ${isAuthenticated ? 'md:grid-cols-3' : 'md:grid-cols-1'} items-center content-center flex-wrap`}>
                 <PrivateContent>
                         <Link  href={links.extractoresXetux.urlCompras.interno}>

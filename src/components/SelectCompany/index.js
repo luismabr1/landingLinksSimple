@@ -12,9 +12,9 @@ import URLBuilder from "../URLBuilder";
 const compras = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/PurchaseFull`;
 const ventas = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesFull`
 const pay = `http://${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesPay`
-const comprasCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/PurchaseFull`;
-const ventasCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesFull`
-const payCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesPay`
+const comprasCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_CANDELARIA}/xconnect/api/ExtractionData/PurchaseFull`;
+const ventasCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_CANDELARIA}/xconnect/api/ExtractionData/SalesFull`
+const payCandelaria = `http://${process.env.NEXT_PUBLIC_SERVER_URL_CANDELARIA}:${process.env.NEXT_PUBLIC_PORT_CANDELARIA}/xconnect/api/ExtractionData/SalesPay`
 
 
 const SelectCompany = (props) =>{

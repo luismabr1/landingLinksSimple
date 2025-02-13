@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -8,6 +9,8 @@ export default function AuthModal({ onClose }) {
   const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [isAdmin, setIsAdmin] = useState(false)
+  const [adminCode, setAdminCode] = useState("")
   const [error, setError] = useState("")
   const [message, setMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
@@ -19,8 +22,9 @@ export default function AuthModal({ onClose }) {
     setError("")
     setMessage("")
 
+
     const endpoint = isLogin ? "/api/login" : "/api/register"
-    const body = isLogin ? { username, password } : { username, email, password }
+    const body = isLogin ? { username, password } : { username, email, password, isAdmin, adminCode }
 
     try {
       const response = await fetch(endpoint, {
@@ -37,7 +41,7 @@ export default function AuthModal({ onClose }) {
           onClose()
         } else {
           setIsLogin(true)
-          setMessage("Registro exitoso. Por favor, inicia sesión.")
+          setError("Registro exitoso. Por favor, inicia sesión.")
         }
       } else {
         setError(data.message || "An error occurred")
@@ -51,9 +55,9 @@ export default function AuthModal({ onClose }) {
   }
 
   return (
-    <div className="fixed inset-0 bg-opacity-20 flex justify-center items-center">
-      <div className="black:bg-white p-6 bg-opacity-70 rounded-lg border shadow-lg w-full max-w-sm backdrop-blur-sm">
-        <h2 className="text-black dark:text-white text-xl font-bold mb-4">{isLogin ? "Iniciar Sesión" : "Registrarse"}</h2>
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+      <div className="bg-white p-6 rounded-lg">
+        <h2 className="text-xl font-bold mb-4 text-black dark:text-white">{isLogin ? "Iniciar Sesión" : "Registrarse"}</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         {message && <p className="text-green-500 mb-4">{message}</p>}
         <form onSubmit={handleSubmit}>
@@ -62,18 +66,40 @@ export default function AuthModal({ onClose }) {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Usuario"
-            className="text-black dark:text-white w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border rounded text-black dark:text-white"
             required
           />
           {!isLogin && (
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
-              className="w-full p-2 mb-4 border rounded"
-              required
-            />
+            <>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+                className="w-full p-2 mb-4 border rounded"
+                required
+              />
+              <div className="mb-4">
+                <input
+                  type="checkbox"
+                  id="isAdmin"
+                  checked={isAdmin}
+                  onChange={(e) => setIsAdmin(e.target.checked)}
+                  className="mr-2 text-black dark:text-white"
+                />
+                <label htmlFor="isAdmin" className="text-black dark:text-white">Registrar como administrador</label>
+              </div>
+              {isAdmin && (
+                <input
+                  type="text"
+                  value={adminCode}
+                  onChange={(e) => setAdminCode(e.target.value)}
+                  placeholder="Código de administrador"
+                  className="w-full p-2 mb-4 border rounded text-black dark:text-white"
+                  required
+                />
+              )}
+            </>
           )}
           <input
             type="password"
@@ -86,13 +112,13 @@ export default function AuthModal({ onClose }) {
           <div className="flex justify-between">
             <button
               type="submit"
-              className="bg-white dark:bg-black dark:hover:bg-white hover:bg-gray-700 hover:text-white text-black dark:text-white dark:hover:text-black border dark:border-white border-black font-bold py-2 px-4 rounded flex items-center"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
               disabled={isLoading}
             >
               {isLoading ? (
                 <>
                   <svg
-                    className="animate-spin -ml-1 mr-3 h-5 w-5 text-black dark:text-white"
+                    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -128,7 +154,7 @@ export default function AuthModal({ onClose }) {
             </button>
           </div>
         </form>
-        <p className="mt-4 text-center text-black dark:text-white bg-white dark:bg-black p-2 rounded">
+        <p className="mt-4 text-center text-black dark:text-white">
           {isLogin ? "¿No tienes una cuenta?" : "¿Ya tienes una cuenta?"}
           <button onClick={() => setIsLogin(!isLogin)} className="text-blue-500 hover:text-blue-700 ml-2">
             {isLogin ? "Regístrate" : "Inicia sesión"}
