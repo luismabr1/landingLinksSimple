@@ -36,7 +36,7 @@ export default function LoginHistoryModal({ isOpen, onClose }) {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md max-h-[80vh] overflow-y-auto">
         <h2 className="text-2xl font-bold mb-4 text-black">Historial de Conexiones</h2>
-        {isLoading ? (
+        {isLoading && isAdmin ? (
           <p className="text-gray-600">Cargando historial...</p>
         ) : (
           <ul className="space-y-2">

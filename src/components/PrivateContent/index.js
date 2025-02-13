@@ -12,6 +12,7 @@ export default function PrivateContent({ children }) {
   if (!isAuthenticated) {
     return <div className="dark:text-white text-black">No estás autorizado para ver este contenido.</div>
   }
-
-  return <>{children}</>
+if (isAuthenticated) {
+    return <>{children}</>
+  }
 }

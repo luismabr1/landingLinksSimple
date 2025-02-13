@@ -18,7 +18,7 @@ export default function AuthStatus() {
 
   if (isAuthenticated) {
     return (
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 text-black dark:text-white">
         <span>Bienvenido, {username}</span>
         {lastLogin && <span className="text-sm text-gray-500">Última conexión: {formatDate(lastLogin)}</span>}
         {isAdmin && (
@@ -29,7 +29,7 @@ export default function AuthStatus() {
             Ver Historial
           </button>
         )}
-        <button onClick={logout} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+        <button onClick={logout} className="bg-white hover:bg-black hover:text-white border dark:border-white border-black hover:border-transparent text-black font-bold py-2 px-4 rounded">
           Cerrar Sesión
         </button>
         <LoginHistoryModal isOpen={isHistoryModalOpen} onClose={() => setIsHistoryModalOpen(false)} />

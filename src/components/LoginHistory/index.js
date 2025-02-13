@@ -6,7 +6,7 @@ import { useAuth } from "../../contexts/AuthContext"
 export default function LoginHistory() {
   const [loginHistory, setLoginHistory] = useState([])
   const [isLoading, setIsLoading] = useState(true)
-  const { isAuthenticated } = useAuth()
+  const { isAuthenticated, is_admin } = useAuth()
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -34,13 +34,17 @@ export default function LoginHistory() {
     return null
   }
 
-  if (isLoading) {
-    return <div>Cargando historial de conexiones...</div>
+  if (is_admin && isLoading) {
+    return <div className="text-black dark:text-white">Cargando historial de conexiones...</div>
   }
 
   return (
     <div className="mt-4">
-      <h2 className=" text-xl font-bold mb-2">Historial de Conexiones</h2>
+      { is_admin &&
+        <h2 className=" text-xl font-bold mb-2 text-black dark:text-white">Historial de Conexiones</h2>
+      }
+ 
+
       <ul className="space-y-2">
         {loginHistory.map((login, index) => (
           <li key={index} className="bg-gray-100 p-2 rounded text-black dark:text-white">
