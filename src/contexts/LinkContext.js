@@ -113,6 +113,10 @@ const links = {
         name: 'Pay EX Candelaria',
         interno: '/ExPayCandelaria',
       },
+      urlAudit: {
+        name: 'EX Auditoria',
+        interno: '/ExAudit',
+      },
     },
 }
 // Crea el contexto

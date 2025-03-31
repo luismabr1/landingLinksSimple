@@ -33,6 +33,9 @@ const Extractores = () => {
                         <Link href={links.extractoresXetux.urlPayCandelaria.interno}>
                             <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlPay.name} Candelaria</span>
                         </Link>
+                        <Link href={links.extractoresXetux.urlAudit.interno}>
+                            <span className="flex items-center justify-center bg-transparent hover:bg-black text-black dark:text-white dark:hover:bg-white dark:hover:text-black font-semibold hover:text-white p-3 m-3 border dark:border-white border-black hover:border-transparent rounded" target="_blank" rel="noreferrer">{links.extractoresXetux.urlAudit.name}</span>
+                        </Link>
                 </PrivateContent>
             </div>
         </>

@@ -8,6 +8,7 @@ import ModoAulaVirtual from "../ModoAulaVirtual";
 import Extractores from "../Extractores";
 import Modo from "../Modo";
 import URLBuilder from "../URLBuilder";
+import URLAudit from "../urlAudit";
 
 const compras = `${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/PurchaseFull`;
 const ventas = `${process.env.NEXT_PUBLIC_SERVER_URL_MODO}:${process.env.NEXT_PUBLIC_PORT_MODO}/xconnect/api/ExtractionData/SalesFull`
@@ -47,6 +48,9 @@ const SelectCompany = (props) =>{
 },{
   id:'9',
   name:'urlbuilder'
+},{
+  id:'10',
+  name:'exAudit'
 }
 
 ];
@@ -74,15 +78,16 @@ const FormRender = ( {company} ) => {
         return <URLBuilder baseUrl={ventas} title='ExVentas'/>;
       case "ExPay":
         return <URLBuilder baseUrl={pay} title='ExPay'/>;
-        case "ExComprasCandelaria":
-          return <URLBuilder baseUrl={comprasCandelaria} title='Excompras Candelaria' />;
-        case "ExVentasCandelaria":
-          return <URLBuilder baseUrl={ventasCandelaria} title='ExVentas Candelaria'/>;
-        case "ExPayCandelaria":
-          return <URLBuilder baseUrl={payCandelaria} title='ExPay Candelaria'/>;
-        default:
-            return null; 
-
+      case "ExComprasCandelaria":
+        return <URLBuilder baseUrl={comprasCandelaria} title='Excompras Candelaria' />;
+      case "ExVentasCandelaria":
+        return <URLBuilder baseUrl={ventasCandelaria} title='ExVentas Candelaria'/>;
+      case "ExPayCandelaria":
+        return <URLBuilder baseUrl={payCandelaria} title='ExPay Candelaria'/>;
+      case "ExAudit":
+        return <URLAudit  title='ExAudit'/>;
+      default:
+        return null; 
      } 
   }
 

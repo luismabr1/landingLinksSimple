@@ -47,7 +47,7 @@ export default function LoginHistory() {
 
       <ul className="space-y-2">
         {loginHistory.map((login, index) => (
-          <li key={index} className="bg-gray-100 p-2 rounded text-black dark:text-white">
+          <li key={index} className="bg-gray-100 p-2 rounded text-black dark:text-black dark:bg-white">
             <p>Fecha: {new Date(login.login_timestamp).toLocaleString()}</p>
             <p>IP: {login.ip_address}</p>
             <p>Navegador: {login.user_agent}</p>

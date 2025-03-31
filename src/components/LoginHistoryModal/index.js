@@ -42,7 +42,7 @@ export default function LoginHistoryModal({ isOpen, onClose }) {
           <ul className="space-y-2">
             {loginHistory.map((login, index) => (
               <li key={index} className="border-b border-gray-200 py-2">
-                <p className="text-sm text-gray-600">{new Date(login.login_timestamp).toLocaleString()}</p>
+                <p className="text-sm text-gray-600 dark:text-black">{new Date(login.login_timestamp).toLocaleString()}</p>
                 <p className="text-sm text-gray-800">Usuario: {login.username}</p>
                 <p className="text-xs text-gray-500">IP: {login.ip_address}</p>
               </li>
