@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { cookies } from "next/headers";
 import dynamic from "next/dynamic";
 import { AuthProvider } from "../contexts/AuthContext"
+import { Analytics } from "@vercel/analytics/react"
 
 const AppThemeProvider = dynamic(() => import("@/contexts/theme"), {
   ssr: false,
